@@ -32,7 +32,7 @@ const Navbar = () => {
           href="#"
           className="text-xl font-bold tracking-tight hover:text-primary"
         >
-          CLDM<span className="text-primary">.</span>
+          CLM<span className="text-primary">.</span>
         </a>
 
         {/* Desktop Nav */}
@@ -52,7 +52,16 @@ const Navbar = () => {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Button size="sm">Contact Me</Button>
+          <Button
+            size="sm"
+            onClick={() =>
+              document
+                .querySelector("#contact")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            Contact Me
+          </Button>
         </div>
 
         {/* Mobile Menu Button */}

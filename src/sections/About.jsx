@@ -10,19 +10,18 @@ const highlights = [
   {
     icon: Rocket,
     title: "Performance",
-    description:
-      "Optimizing for speed and delivering lighting-fast user experiences.",
+    description: "Ensuring applications run efficiently under any load.",
   },
   {
     icon: Users,
     title: "Collaboration",
-    description: "Working closely with teams to bring ideas to life.",
+    description:
+      "Turning ideas into reality through teamwork and communication.",
   },
   {
     icon: Lightbulb,
     title: "Innovation",
-    description:
-      "Staying ahead with the latest technologies and best practices.",
+    description: "Applying creative solutions to solve complex problems.",
   },
 ];
 
@@ -50,30 +49,33 @@ const About = () => {
             {/* About Me Details */}
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur sequi atque impedit quae asperiores. Ipsa nulla velit
-                dolorem aperiam dolorum!
+                I’m Cymon Luther Mantaring, a software developer passionate
+                about creating applications that last. I focus on building
+                systems and components that are not just functional, but
+                maintainable and scalable over time.
               </p>
 
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur sequi atque impedit quae asperiores. Ipsa nulla velit
-                dolorem aperiam dolorum!
+                Every line of code I write is crafted with reliability in mind.
+                I believe in clean, efficient solutions that can adapt as
+                technology evolves, ensuring the software I build continues to
+                serve its purpose long into the future.
               </p>
 
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur sequi atque impedit quae asperiores. Ipsa nulla velit
-                dolorem aperiam dolorum!
+                From small features to complex systems, my goal is to leave
+                behind code that developers can trust and build upon. I take
+                pride in creating applications that stand the test of time,
+                helping teams and users achieve their goals without compromise.
               </p>
             </div>
 
             {/* Mission */}
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Tempore aliquid consectetur debitis, iusto eius veritatis
-                dolores assumenda iste veniam eveniet."
+                "To write thoughtful, maintainable, and scalable code that
+                endures, empowering users and developers alike to rely on
+                software built to last."
               </p>
             </div>
           </div>

@@ -26,7 +26,7 @@ const Footer = () => {
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
             <a href="#" className="text-xl font-bold tracking-tight">
-              CLDM<span className="text-primary">.</span>
+              CLM<span className="text-primary">.</span>
             </a>
             <p className="text-sm text-muted-foreground mt-2">
               © {currentYear} Cymon Luther Mantaring. All rights reserved.
@@ -35,9 +35,9 @@ const Footer = () => {
 
           {/* Links */}
           <nav className="flex flex-wrap justify-center gap-6">
-            {footerLinks.map((link) => (
+            {footerLinks.map((link, index) => (
               <a
-                key={link.href}
+                key={index}
                 href={link.href}
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
@@ -48,9 +48,9 @@ const Footer = () => {
 
           {/* Social Links */}
           <div className="flex items-center gap-4">
-            {socials.map((social) => (
+            {socials.map((social, index) => (
               <a
-                key={social.label}
+                key={index}
                 href={social.href}
                 target="_blank"
                 aria-label={social.label}

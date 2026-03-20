@@ -1,38 +1,38 @@
 const experiences = [
   {
-    period: "2022 — Present",
-    role: "Senior Frontend Engineer",
-    company: "Tech Innovators Inc.",
+    period: "March 2025 – Present",
+    role: "Software Developer (PHP & ReactJS Developer) ",
+    company: "Inobei, Inc.",
     description:
-      "Leading frontend architecture for a suite of fintech products. Implemented micro-frontend architecture, reduced bundle size by 40%, and mentored a team of 5 developers.",
-    technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
+      "Maintained and enhanced a custom PHP-based framework by implementing new features and fixing bugs, using jQuery for frontend functionality and Node.js for background processes such as email handling and task scheduling. Worked on an eCommerce system, handled data migration through Excel and JSON transformation, integrated React.js components via JSON data exchange, and collaborated with clients to gather requirements and deliver tailored solutions.",
+    technologies: ["PHP", "ReactJS", "NodeJS", "MySQL", "jQuery"],
     current: true,
   },
   {
-    period: "2020 — 2022",
-    role: "Frontend Engineer",
-    company: "Digital Solutions Co.",
+    period: "June 2025 – July 2025",
+    role: "Freelance Web Developer",
+    company: "Nurtured Thoughts Psychology (International Client – Australia)",
     description:
-      "Built and maintained multiple React applications for enterprise clients. Introduced automated testing practices that improved code coverage to 85%.",
-    technologies: ["React", "Redux", "Jest", "Cypress"],
+      "Designed and developed responsive website layouts using Figma and Wix Studio, ensuring consistency across desktop, tablet, and mobile devices. Built and customized dynamic UI components, optimized global site elements for improved usability and branding, and conducted end-to-end testing while collaborating with clients to meet project requirements.",
+    technologies: ["Wix Studio", "Figma", "JavaScript", "HTML", "CSS"],
     current: false,
   },
   {
-    period: "2019 — 2020",
-    role: "Junior Developer",
-    company: "StartUp Labs",
+    period: "September 2024 – December 2024",
+    role: "Intern (On-the-Job Training)",
+    company: "People360™ Consulting Corporation",
     description:
-      "Contributed to the development of a SaaS platform from MVP to production. Collaborated with designers to implement pixel-perfect UI components.",
-    technologies: ["React", "Node.js", "MongoDB", "AWS"],
+      "Designed and developed a compliance management system using Laravel and Bootstrap. The platform facilitates the submission and review of compliance documents by the IMS Officer. It includes an automated email notification feature that alerts users of incoming compliance requirements, ensuring timely document uploads and approval processing.",
+    technologies: ["Laravel", "Boostrap", "MySQL"],
     current: false,
   },
   {
-    period: "2018 — 2019",
-    role: "Freelance Developer",
-    company: "Self-Employed",
+    period: "December 2018 – March 2019",
+    role: "Work Immersion",
+    company: "Gloria Institute of Science and Technology - TESDA",
     description:
-      "Delivered custom web solutions for small businesses and startups. Built 15+ websites and applications, handling everything from design to deployment.",
-    technologies: ["JavaScript", "PHP", "WordPress", "MySQL"],
+      "Provided comprehensive secretarial support, including records and data management, document preparation, and other administrative services.",
+    technologies: ["Word", "Powerpoint", "Excel"],
     current: false,
   },
 ];
@@ -52,16 +52,17 @@ const Experience = () => {
             Career Journey
           </span>
           <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
-            Experience that{" "}
+            Where code meets{" "}
             <span className="font-serif italic font-normal text-white">
               {" "}
-              speaks volumes.
+              real-world impact.
             </span>
           </h2>
 
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
-            architecto!
+            Experienced in maintaining system infrastructure, implementing
+            framework-compliant features, and building modern web applications
+            with a focus on performance and usability.
           </p>
         </div>
         {/* Section Header - END */}

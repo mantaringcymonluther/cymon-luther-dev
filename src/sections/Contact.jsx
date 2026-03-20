@@ -132,15 +132,16 @@ const Contact = () => {
             </span>
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            libero necessitatibus ex quia maiores nam.
+            I’m always open to connecting with fellow developers, collaborators,
+            or anyone with an exciting project. Reach out and let’s create
+            something impactful together.
           </p>
         </div>
         {/* Section Header - END */}
 
         {/* Contact Section */}
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          <div className="glass p-8 rounded-3xl border border-primary/30 animate-fade-in animation-delay-300">
+          <div className="glass p-8 rounded-3xl border border-primary/30 animate-fade-in animation-delay-300 min-w-0">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label
@@ -239,27 +240,29 @@ const Contact = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="space-y-6 animate-fade-in animation-delay-400">
-            <div className="glass rounded-3xl p-8">
+          <div className="space-y-6 animate-fade-in animation-delay-400 min-w-0">
+            <div className="glass rounded-3xl p-4 md:p-8">
               <h3 className="text-xl font-semibold mb-6">
                 Contact Information
               </h3>
               <div className="space-y-4">
-                {contactInfo.map((item, i) => (
+                {contactInfo.map((contact, index) => (
                   <a
-                    key={i}
-                    href={item.href}
+                    key={index}
+                    href={contact.href}
                     target="_blank"
-                    className="flex items-center gap-4 p-4 rounded-xl hover:bg-surface transition-colors group"
+                    className="flex items-center gap-4 p-2 md:p-4 rounded-xl hover:bg-surface transition-colors group"
                   >
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <item.icon className="w-5 h-5 text-primary" />
+                      <contact.icon className="w-5 h-5 text-primary" />
                     </div>
                     <div>
                       <div className="text-sm text-muted-foreground">
-                        {item.label}
+                        {contact.label}
                       </div>
-                      <div className="font-medium">{item.value}</div>
+                      <div className="font-medium break-all">
+                        {contact.value}
+                      </div>
                     </div>
                   </a>
                 ))}
@@ -273,9 +276,9 @@ const Contact = () => {
                 <span className="font-medium">Currently Available</span>
               </div>
               <p className="text-muted-foreground text-sm">
-                I'm currently open to new opportunities and exciting projects.
-                Whether you need a full-time engineer or a freelance consultant,
-                let's talk!
+                I’m a software developer seeking new opportunities to build
+                impactful solutions. Available for full-time roles or freelance
+                projects.
               </p>
             </div>
           </div>

@@ -4,35 +4,38 @@ import { useEffect, useRef, useState } from "react";
 const testimonials = [
   {
     quote:
-      "Pedro is one of the most talented engineers I've worked with. His attention to detail and ability to translate complex requirements into elegant solutions is remarkable.",
-    author: "Sarah Chen",
-    role: "CTO, Tech Innovators Inc.",
-    avatar:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
+      "As a supervisor during his intern days, I noticed he learns quickly and turns knowledge into code. He asks thoughtful questions, which contributed to building the compliance system.",
+    author: "Nikko Niel Zamora",
+    role: "IT Head Supervisor, People360",
+    avatar: "people/Nikko Niel Zamora.jpeg",
   },
   {
     quote:
-      "Working with Pedro was a game-changer for our project. He delivered ahead of schedule with code quality that set a new standard for our team.",
-    author: "Michael Rodriguez",
-    role: "Product Manager, Digital Solutions",
-    avatar:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop",
+      "As a team lead, he’s easy to manage, takes tasks seriously, and consistently delivers on time, even under pressure.",
+    author: "June Roe Nasayao",
+    role: "Developer Team Lead, Inobei. Inc",
+    avatar: "/people/June Roe Nasayao.jpeg",
   },
   {
     quote:
-      "Pedro's expertise in React and TypeScript helped us rebuild our entire frontend in record time. His architectural decisions continue to pay dividends.",
-    author: "Emily Watson",
-    role: "Engineering Lead, StartUp Labs",
-    avatar:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
+      "Fast to design and implement fixes on our website using Wix Studio. Easy to communicate with and follows instructions very well.",
+    author: "Dr. Shaun Tan",
+    role: "Consultant in Health Tech, Alternative Medicine & GP Services",
+    avatar: "/people/Dr. Shaun Tan.png",
   },
   {
     quote:
-      "Not only is Pedro technically brilliant, but he's also a fantastic communicator and team player. He elevated everyone around him.",
-    author: "David Kim",
-    role: "CEO, Innovation Hub",
-    avatar:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+      "Easy to collaborate with. We share ideas on using graphics effectively in the system.",
+    author: "Jam Songsong",
+    role: "Graphic Designer & Marketing Head, Inobei Inc.",
+    avatar: "/people/Jam Songsong.jpeg",
+  },
+  {
+    quote:
+      "The compliance system he developed is still in use today, proving that his code stands the test of time.",
+    author: "Mark Christian Dela Cruz",
+    role: "IMS Officer, People360",
+    avatar: "/people/Mark Christian Dela Cruz.png",
   },
 ];
 
