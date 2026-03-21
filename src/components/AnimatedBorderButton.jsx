@@ -1,12 +1,27 @@
-import { Download } from "lucide-react";
-
 const AnimatedBorderButton = ({ children, href, download }) => {
   const Tag = href ? "a" : "button";
+
+  const handleDownload = async (e) => {
+    if (download) {
+      e.preventDefault();
+      const response = await fetch(href);
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = download;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      window.URL.revokeObjectURL(url);
+    }
+  };
 
   return (
     <Tag
       href={href}
       download={download}
+      onClick={handleDownload}
       className="relative bg-transparent border border-border 
         text-foreground hover:border-primary/50 transition-all 
         duration-1000 focus:outline-none focus-visible:ring-2 
