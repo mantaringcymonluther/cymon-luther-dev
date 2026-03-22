@@ -195,8 +195,8 @@ const Hero = () => {
 
       {/* Scroll Indicator */}
       <div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 
-      animate-fade-in animation-delay-800"
+        className="absolute bottom-1 left-1/2 -translate-x-1/2 
+      animate-fade-in animation-delay-800 z-10"
       >
         <a
           href="#about"

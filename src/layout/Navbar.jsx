@@ -1,6 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Button from "@/components/Button";
 
 const navLinks = [
@@ -45,9 +45,29 @@ const Navbar = () => {
     }
   };
 
+  // Navbar Click Outside - START
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (
+        isMobileMenuOpen &&
+        navRef.current &&
+        !navRef.current.contains(e.target)
+      ) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [isMobileMenuOpen]);
+  // Navbar Click Outside - END
+
   return (
     <header
-      className={`fixed top-0 left-0 right-0 transition-all duration-500 ${isScrolled ? "glass-strong py-3" : "bg-transparent py-5"} z-50`}
+      ref={navRef}
+      className={`fixed top-0 left-0 right-0 transition-all duration-500 ${isScrolled ? `glass-strong pt-3 ${isMobileMenuOpen ? "pb-0" : "pb-3"}` : "bg-transparent py-5"} z-50`}
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">
         <a
@@ -91,7 +111,7 @@ const Navbar = () => {
 
       {/* Mobile Nav */}
       {isMobileMenuOpen && (
-        <div className="md:hidden glass-strong animate-fade-in">
+        <div className="md:hidden glass-strong animate-fade-in mt-3">
           <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
             {navLinks.map((link, index) => (
               <a
@@ -107,7 +127,12 @@ const Navbar = () => {
               </a>
             ))}
 
-            <Button onClick={() => setIsMobileMenuOpen(false)}>
+            <Button
+              onClick={(e) => {
+                handleNavClick(e, "/#contact");
+                setIsMobileMenuOpen(false);
+              }}
+            >
               Contact Me
             </Button>
           </div>

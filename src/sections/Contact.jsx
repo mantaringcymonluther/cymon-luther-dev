@@ -110,7 +110,10 @@ const Contact = () => {
   }, [submitStatus.type]);
 
   return (
-    <section id="contact" className="py-32 relative overflow-hidden">
+    <section
+      id="contact"
+      className="py-16 md:py-32 relative overflow-hidden scroll-mt-10 md:scroll-mt-0"
+    >
       {/* Background Glow */}
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />

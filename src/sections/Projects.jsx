@@ -45,7 +45,10 @@ const Projects = () => {
   const navigate = useNavigate();
 
   return (
-    <section id="projects" className="py-32 relative overflow-hidden">
+    <section
+      id="projects"
+      className="py-16 md:py-32 relative overflow-hidden scroll-mt-15 md:scroll-mt-0"
+    >
       {/* Background Glows */}
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 left-0 w-64 h-64 bg-highlight/5 rounded-full blur-3xl" />
@@ -63,8 +66,8 @@ const Projects = () => {
             </span>
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            libero necessitatibus ex quia maiores nam.
+            A curated selection of projects that showcase my approach to
+            building reliable, scalable, and practical solutions.
           </p>
         </div>
         {/* Section Header - END */}
