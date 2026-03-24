@@ -1,8 +1,8 @@
 import {
   ArrowRight,
   ChevronDown,
-  Code,
   Download,
+  Facebook,
   Github,
   Linkedin,
 } from "lucide-react";
@@ -14,9 +14,9 @@ const socials = [
   { icon: Github, href: "https://github.com/mantaringcymonluther" },
   {
     icon: Linkedin,
-    href: "https://www.linkedin.com/in/cymon-luther-mantaring-b1b050290/",
+    href: "https://www.linkedin.com/in/cymon-luther-mantaring/",
   },
-  { icon: Code, href: "https://dev.to/" },
+  { icon: Facebook, href: "https://www.facebook.com/cymonluther" },
 ];
 
 /* eslint-disable react-hooks/purity */

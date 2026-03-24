@@ -67,15 +67,6 @@ const projects = [
     link: "#",
     github: "#",
   },
-  {
-    title: "Project 8",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti obcaecati eos fugiat, impedit sapiente aperiam.",
-    image: "/projects/project-image-placeholder.jpg",
-    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-    link: "#",
-    github: "#",
-  },
 ];
 
 const ViewAllProjectsPage = () => {
